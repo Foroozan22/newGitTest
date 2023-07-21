@@ -1,0 +1,87 @@
+body  { background: rgb(97, 94, 94);
+    color: white;
+    font-family:"helvetica neue", "helvetica", "arial" ;
+    margin: 0;
+    padding: 0;
+}
+/* HEADER */
+header{
+   
+ background:black;
+    background-image: url("images/hero.jpeg");
+    background-size: 100%;
+    background-position: center;
+    height: 400px;
+    padding: 20px;
+    text-align: center;
+}
+header a {
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+header .mobile {
+    display: none;
+
+}
+
+header .logo a {
+    background-image: url("images/logo.png");
+    background-size: 300px;
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    background-repeat: no-repeat;
+    text-indent: -999999999px;
+    top: -30px;
+    width: 300px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+nav li{
+    display: inline-block;
+    margin-right: 20px;
+}
+/* RESPONSIVE RULES */
+@media screen and (max-width:715px) {
+    header {
+        height: 250px;
+        background-position: 0 -30px;
+    }
+}
+    header .mobile{
+        display: inline-block;
+    }
+    header .desktop{
+        display: none;
+    }
+    @media screen and (max-width:500px){
+        header {
+            height: 200px;
+            background-position: 0 -0px;
+
+        }
+    }
+    .features img {
+        width: 100px; /* Adjust the width to your desired size */
+        height: 20px; /* This ensures the aspect ratio is maintained */
+      }
+      section.features {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      section.features figure {
+        text-align: center;
+      }
+      
+      section.features img {
+        max-width: 100px; /* Adjust the width to your desired size */
+        height: auto; /* This ensures the aspect ratio is maintained */
+      }

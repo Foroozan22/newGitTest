@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All about creation</title>
+        <link rel="stylesheet" href="project.css">
+        
+    </head>
+    <body>
+        <header>All about creation</header>
+        <header class="flash-text"><strong>creation</strong></header>
+        <main>
+            <h1>Discover the Artistry of Mojtaba furniture</h1>
+            
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Enter code">
+            <button onclick="searchFigure()">Search</button>
+        </div>
+
+       <main>
+        <p>How is our work?</p>
+        <ul id="work-list" class="hidden">
+            <li>Customizable Designs for Every Space</li>
+            <li>Unique designs tailored to your taste</li>
+            <li>Attention to detail in every piece</li>
+            <li>Premium quality materials used</li>
+            <li>Handcrafted furniture made with care</li>
+        </ul>
+        <section class="image-gallery">
+            <div class="image-gallery-container">
+                <div class="image-container">
+                
+                    <img id="gallery-image" class="gallery-image" src="" alt="Gallery Image">
+                </div>
+            
+        </section>
+        <section class="image-gallery">
+            <div class="image-gallery-container">
+              <div class="image-container">
+                <img class="gallery-image" src="" alt="Gallery Image">
+              </div>
+              <div class="code-display">
+                <p id="image-code-display"></p>
+              </div>
+              <div class="gallery-buttons">
+                <button onclick="showPreviousImage()">Previous</button>
+                <button onclick="showNextImage()">Next</button>
+              </div>
+            </div>
+          </section>
+    
+       </main>
+
+     <p> Click on each image for the price.</p>
+
+       <section class="image-figures">
+        <figure class="image-figure" onclick="showPrice('22')">
+            <img src="images/decoration.JPG" alt="Woman Statue">
+            <figcaption>Woman Statue code: 22</figcaption>
+        </figure>
+    
+        <figure class="image-figure" onclick="showPrice('24')">
+            <img src="images/IMG_0020.JPG" alt="Chair for beach">
+            <figcaption>Chair for beach code: 24</figcaption>
+        </figure>
+    
+        <figure class="image-figure" onclick="showPrice('25')">
+            <img src="images/IMG_0063.JPG" alt="Fish-glass design 1">
+            <figcaption>Fish-glass design 1 code: 25</figcaption>
+        </figure>
+    
+        <figure class="image-figure" onclick="showPrice('26')">
+            <img src="images/IMG_0068.JPG" alt="Fish-glass design 2">
+            <figcaption>Fish-glass design 2 code: 26</figcaption>
+        </figure>
+    
+        <figure class="image-figure" onclick="showPrice('27')">
+            <img src="images/a365419e-84a1-4e73-8279-440064a600f2.JPG" alt="Table">
+            <figcaption>Table & chairs with chain legs code: 27</figcaption>
+        </figure>
+    </section>
+
+        <p id="price-display" class="hidden"></p>
+    </main>
+
+    <footer>
+        Tehran,
+        <strong>Mojtaba Hosseini</strong> furniture Company, Tell: +989359095717
+    </footer>
+    <script src="project.js"></script>
+</body>
+</html>
